@@ -39,3 +39,11 @@ spec:
         host: productpage
         port:
           number: 9080
+  - match:
+    - uri:
+        exact: /kiali
+    route:
+    - destination:
+        host: kiali
+        port:
+          number: 20001
