@@ -39,11 +39,3 @@ spec:
         host: productpage
         port:
           number: 9080
-  - match:
-    - uri:
-        exact: /kiali
-    route:
-    - destination:
-        host: kiali.istio-system
-        port:
-          number: 20001
