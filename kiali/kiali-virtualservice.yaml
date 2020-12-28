@@ -13,7 +13,7 @@ spec:
           exact: /kiali
       route:
       - destination:
-          host: kiali
+          host: kiali.istio-system.svc.cluster.local
           port:
             number: 20001
 
@@ -24,7 +24,7 @@ kind: DestinationRule
 metadata:
   name: kiali
 spec:
-  host: kiali.istio-system
+  host: kiali.istio-system.svc.cluster.local
   trafficPolicy:
     tls:
       mode: ISTIO_MUTUAL
