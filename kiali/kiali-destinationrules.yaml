@@ -3,7 +3,7 @@ kind: DestinationRule
 metadata:
   name: kiali
 spec:
-  host: kiali
+  host: kiali.istio-system
   trafficPolicy:
     loadBalancer:
       simple: RANDOM

@@ -44,6 +44,6 @@ spec:
         exact: /kiali
     route:
     - destination:
-        host: kiali
+        host: kiali.istio-system
         port:
           number: 20001
